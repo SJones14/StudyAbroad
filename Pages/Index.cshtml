@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    string db = Database.DBoutput();
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p> @db </p>  
+
+   <!-- <table>
+        <thead>
+            <tr>
+                <th>University Name</th>
+                <th>Country</th>
+                <th>Continent</th>
+            </tr>
+        </thead>
+        <tbody>
+            //foreach (string row in db)
+            {
+                <tr>
+                    <td>row.Id</td>
+                    <td>row.University_Name</td>
+                    <td>row.Country</td>
+                    <td>row.Continent</td>
+                </tr>
+            }
+        </tbody>
+     </table>-->
+</div>
