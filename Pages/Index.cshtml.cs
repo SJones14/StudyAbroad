@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.SqlClient;
 using System.Data.Common;
@@ -8,19 +8,20 @@ namespace test.Pages
 
     public class Database
     {
-        public static string DBoutput()
+        public static List<string> DBoutput()
         {
             SqlConnection dbconnection = new SqlConnection("Server=tcp:ufstudyabroadserver.database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Persist Security Info=False;User ID=tech;Password=StudyAbroad23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             dbconnection.Open();
             SqlCommand command;
             SqlDataReader reader;
-            String sql, Output = "";
+            String sql = "";
             sql = "Select * From UNIVERSITIES";
             command = new SqlCommand(sql, dbconnection);
             reader = command.ExecuteReader();
+            List<string> Output = new List<string>();
             while (reader.Read())
             {
-                Output += reader.GetValue(1) + ", " + reader.GetValue(2) + ", " + reader.GetValue(3) + "\n";
+                Output.Add(reader.GetValue(1) + ", " + reader.GetValue(2) + ", " + reader.GetValue(3));
             }
             dbconnection.Close();
             return Output;
