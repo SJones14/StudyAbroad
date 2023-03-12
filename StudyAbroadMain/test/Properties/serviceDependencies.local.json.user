@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2023-02-11T00:08:28.39067Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2023-02-11T00:08:03.5875562Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "c926019d-e79b-4353-8f3c-0f848cc262c7"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "UFStudyAbroad"
+    }
+  }
+}
