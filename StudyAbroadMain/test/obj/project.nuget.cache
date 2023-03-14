@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IrhGvWXKrcUC6m15d52rXRVDp7SNnXzEAsGI4OEZDM/V03AmnU7A3kH8Acu389G+FwUBX7Ar+N2Kw1xy6hTknQ==",
+  "dgSpecHash": "+AN1JJcQ6wOsk98lSQtjzwb4YJJXI8xfsv5nDNPQ5HLUNjU4VEvvLFUNTswUFQMicDR3LhcMQu01HtjN0oSRLw==",
   "success": true,
-  "projectFilePath": "/Users/petersong/Developer/StudyAbroadMain/test/StudyAbroadMain.csproj",
+  "projectFilePath": "/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/StudyAbroadMain.csproj",
   "expectedPackageFiles": [
     "/Users/petersong/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/petersong/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

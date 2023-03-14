@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{C708B2DA-DA91-49E2-86D3-05276CC2F960}|test">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.ItemProperties.StudyAbroadMain PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/AddUniversity.cshtml.cs">
     <Files>
-      <File FileName="test/Pages/AddUniversity.cshtml.cs" />
-      <File FileName="test/Pages/Shared/_Layout.cshtml.css" Line="1" Column="1" />
+      <File FileName="test/Pages/AddUniversity.cshtml.cs" Line="6" Column="34" />
+      <File FileName="test/Pages/Shared/_Layout.cshtml.css" />
       <File FileName="test/Pages/Shared/_Layout.cshtml" Line="32" Column="43" />
-      <File FileName="test/Pages/AddUniversity.cshtml" Line="50" Column="77" />
+      <File FileName="test/Pages/AddUniversity.cshtml" Line="2" Column="7" />
       <File FileName="test/Pages/Login.cshtml" Line="15" Column="11" />
-      <File FileName="test/Pages/Index.cshtml.cs" Line="11" Column="38" />
-      <File FileName="test/Pages/Index.cshtml" Line="11" Column="9" />
-      <File FileName="test/Pages/Login.cshtml.cs" />
-      <File FileName="test/Pages/AdminOptions.cshtml" Line="1" Column="1" />
-      <File FileName="test/Pages/AdminOptions.cshtml.cs" Line="1" Column="1" />
-      <File FileName="test/Pages/signin.css" Line="37" Column="12" />
-      <File FileName="test/Pages/Error.cshtml" Line="1" Column="1" />
-      <File FileName="test/Pages/Error.cshtml.cs" Line="1" Column="1" />
-      <File FileName="test/Pages/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="test/Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="test/Pages/Index.cshtml.cs" />
+      <File FileName="test/Pages/Index.cshtml" Line="5" Column="19" />
+      <File FileName="test/Pages/Login.cshtml.cs" Line="1" Column="1" />
+      <File FileName="test/Pages/AdminOptions.cshtml" />
+      <File FileName="test/Pages/AdminOptions.cshtml.cs" />
+      <File FileName="test/Pages/signin.css" />
+      <File FileName="test/Pages/Error.cshtml" Line="27" Column="1" />
+      <File FileName="test/Pages/Error.cshtml.cs" />
+      <File FileName="test/Pages/_ViewImports.cshtml" />
+      <File FileName="test/Pages/_ViewStart.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,7 +29,7 @@
               <Node name="assets" expanded="True" />
               <Node name="Pages" expanded="True">
                 <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" expanded="True" selected="True" />
+                  <Node name="_Layout.cshtml" expanded="True" />
                 </Node>
                 <Node name="AddUniversity.cshtml" expanded="True" />
                 <Node name="AdminOptions.cshtml" expanded="True" />
@@ -53,9 +54,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.StudyAbroadMain PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
 </Properties>

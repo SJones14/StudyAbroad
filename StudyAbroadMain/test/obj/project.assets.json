@@ -3514,11 +3514,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/petersong/Developer/StudyAbroadMain/test/StudyAbroadMain.csproj",
+      "projectUniqueName": "/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/StudyAbroadMain.csproj",
       "projectName": "test",
-      "projectPath": "/Users/petersong/Developer/StudyAbroadMain/test/StudyAbroadMain.csproj",
+      "projectPath": "/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/StudyAbroadMain.csproj",
       "packagesPath": "/Users/petersong/.nuget/packages/",
-      "outputPath": "/Users/petersong/Developer/StudyAbroadMain/test/obj/",
+      "outputPath": "/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/petersong/.nuget/NuGet/NuGet.Config"

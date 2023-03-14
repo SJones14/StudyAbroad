@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StudyAbroadMain
 build_property.RootNamespace = StudyAbroadMain
-build_property.ProjectDir = /Users/petersong/Developer/StudyAbroadMain/test/
+build_property.ProjectDir = /Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/petersong/Developer/StudyAbroadMain/test
+build_property.MSBuildProjectDirectory = /Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/petersong/Developer/StudyAbroadMain/test/Pages/AddUniversity.cshtml]
+[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/AddUniversity.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkVW5pdmVyc2l0eS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroadMain/test/Pages/AdminOptions.cshtml]
+[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/AdminOptions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW5PcHRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroadMain/test/Pages/Error.cshtml]
+[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroadMain/test/Pages/Index.cshtml]
+[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroadMain/test/Pages/Login.cshtml]
+[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroadMain/test/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroadMain/test/Pages/_ViewImports.cshtml]
+[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroadMain/test/Pages/_ViewStart.cshtml]
+[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroadMain/test/Pages/Shared/_Layout.cshtml]
+[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ps8s6hlvt4
