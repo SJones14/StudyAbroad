@@ -1,5 +1,5 @@
 ﻿@page
-@model IndexModel
+@model LoginModel
 @{
     ViewData["Title"] = "Login";
 }
@@ -111,32 +111,30 @@
 <body class="text-center">
 
     <main class="form-signin w-100 m-auto">
-        <form>
-            <!--<img class="mb-4" src="../assets/brand/uf-logo.png" alt="" width="" height="">-->
-            <div class="center" class="mb-4 mx-auto" style="width:300px;">
-                <img src="https://www.findlay.edu/offices/marketing-communication/brand-guidelines/SiteAssets/Pages/Wordmark/Stacked%20Academic%20Signature.png" alt="" width=300 height=auto>
+        <!--<img class="mb-4" src="../assets/brand/uf-logo.png" alt="" width="" height="">-->
+        <div class="center" class="mb-4 mx-auto" style="width:300px;">
+            <img src="https://www.findlay.edu/offices/marketing-communication/brand-guidelines/SiteAssets/Pages/Wordmark/Stacked%20Academic%20Signature.png" alt="" width=300 height=auto>
+        </div>
+        @if (!string.IsNullOrEmpty(Model.Failed))
+        {
+            <p style="color: red">@Model.Failed</p>
+        }
+        <h1 class="h4 mt-5 mb-3 fw-normal">Please sign in</h1>
+
+        <form method="post">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" name="uname" placeholder="Username">
+                <label for="floatingInput">Username</label>
             </div>
 
-
-            <h1 class="h4 mt-5 mb-3 fw-normal">Please sign in</h1>
-
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control" id="floatingPassword" name="pswd" placeholder="Password">
                 <label for="floatingPassword">Password</label>
             </div>
 
-            <div class="checkbox mb-3">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
             <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-           <!-- <p class="mt-5 mb-3 text-muted">&copy; 2022</p>-->
         </form>
+        
     </main>
 
 
