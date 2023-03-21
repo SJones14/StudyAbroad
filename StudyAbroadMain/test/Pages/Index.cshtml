@@ -2,7 +2,9 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
-    List<string> schoolList = Database.DBoutputContinents();
+    List<string> ContinentList = Database.DBoutputContinents();
+    List<string> CountryList = Database.DBoutputCountries();
+    List<string> MajorList = Database.DBoutputMajors();
 }
 
 <body class="text-center">
@@ -10,7 +12,7 @@
     <div class="dropdown">
         <span>Select Continent:</span>
         <div class="dropdown-content">
-    @foreach (string school in schoolList)
+            @foreach (string school in ContinentList)
     {
         
         <input type="checkbox" id="@school">
@@ -48,16 +50,48 @@
         <div class="col">
             <div class="card mx-auto" style="width: 30rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <span>Select major:</span><br />
+
+
+                    @foreach (string school in MajorList)
+                    {
+
+                        <input type="checkbox" id="@school">
+                        <label for="@school">@school</label>
+                        <br />
+                    }
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card mx-auto" style="width: 30rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    
+                        <span>Select Continent:</span><br/>
+                        
+
+                    @foreach (string school in ContinentList)
+                            {
+                                
+                                <input type="checkbox" id="@school">
+                                <label for="@school">@school</label>
+                                <br />
+                            }
+                        
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mx-auto" style="width: 30rem;">
+                <div class="card-body">
+                    <span>Select Country:</span><br />
+                    @foreach (string school in CountryList)
+                    {
+
+                        <input type="checkbox" id="@school">
+                        <label for="@school">@school</label>
+                        <br />
+                    }
                 </div>
             </div>
         </div>
