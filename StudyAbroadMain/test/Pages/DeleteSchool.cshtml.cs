@@ -8,6 +8,7 @@ namespace test.Pages
 
     public class DeleteSchoolModel : PageModel
     {
+        
         private readonly ILogger<IndexModel> _logger;
 
         public DeleteSchoolModel(ILogger<IndexModel> logger)

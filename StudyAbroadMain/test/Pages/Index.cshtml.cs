@@ -20,7 +20,24 @@ namespace test.Pages
             List<string> Output = new();
             while (reader.Read())
             {
-                Output.Add(reader.GetValue(1) + ", " + reader.GetValue(2) + ", " + reader.GetValue(3));
+                Output.Add(reader.GetValue(1) + "," + reader.GetValue(2) + "," + reader.GetValue(3));
+            }
+            dbconnection.Close();
+            return Output;
+        }
+        public static List<string> DBoutputContinents()
+        {
+            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver.database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Persist Security Info=False;User ID=tech;Password=StudyAbroad23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            dbconnection.Open();
+            SqlCommand command;
+            SqlDataReader reader;
+            string sql = "Select * From UNIVERSITIES";
+            command = new SqlCommand(sql, dbconnection);
+            reader = command.ExecuteReader();
+            List<string> Output = new();
+            while (reader.Read())
+            {
+                Output.Add(reader.GetValue(3).ToString());
             }
             dbconnection.Close();
             return Output;
