@@ -9,27 +9,34 @@
 
 <body class="text-center">
     <p>Let's add a university.</p>
-    <div class="form-floating mx-auto mb-3 col-md-6">
-        <input type="email" class="form-control" id="universityName" placeholder="Hogwarts School of Witchcraft and Wizardry">
-        <label for="universityName">University name</label>
-    </div>
-    <div class="form-floating mx-auto mb-3 col-md-6">
-        <input type="text" class="form-control" id="countryName" placeholder="Country">
-        <label for="countryName">Country name</label>
-    </div>
 
-    <div class="form-floating mx-auto mb-3 col-md-6">
-        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-            <option selected></option>
-            <option value="1">Africa</option>
-            <option value="2">Asia</option>
-            <option value="3">Australia</option>
-            <option value="4">Europe</option>
-            <option value="5">Central/South America/Caribbean</option>
-        </select>
-        <label for="floatingSelect">Choose continent</label>
-    </div>
+    <form method="post">
+        <div class="form-floating mx-auto mb-3 col-md-6">
+            <input type="text" class="form-control" id="universityName" name="uniName" placeholder="University Name">
+            <label for="universityName">University name</label>
+        </div>
 
+        <div class="form-floating mx-auto mb-3 col-md-6">
+            <input type="text" class="form-control" id="countryName" name="ctry" placeholder="Country">
+            <label for="countryName">Country name</label>
+        </div>
+
+        <div class="form-floating mx-auto mb-3 col-md-6">
+            <select class="form-select" id="floatingSelect" name="cont" aria-label="Floating label select example">
+                <option selected></option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Australia">Australia</option>
+                <option value="Europe">Europe</option>
+                <option value="Central/South America/Caribbean">Central/South America/Caribbean</option>
+            </select>
+            <label for="floatingSelect">Choose continent</label>
+        </div>
+
+        <input class="btn btn-primary mt-3" type="submit" value="Add School">
+    </form>
+
+    <!-- not currently in database
     <div class="form-floating mb-3 mx-auto col-md-6">
         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
             <option selected></option>
@@ -41,6 +48,8 @@
         </select>
         <label for="floatingSelect">Duration of study abroad program continent</label>
     </div>
+    
+
     <div class="form-floating mx-auto mb-3 col-md-6">
         <input type="text" class="form-control" id="housingType" placeholder="dorm">
         <label for="housingType">Housing type</label>
@@ -49,9 +58,7 @@
         <label for="formFileMultiple" class="form-label">Upload pictures of this study abroad destination</label>
         <input class="form-control w-50" type="file" id="formFileMultiple" multiple>
     </div>
-
-
-    <input class="btn btn-primary mt-3" type="submit" value="Add">
+    -->
 
 
 </body>

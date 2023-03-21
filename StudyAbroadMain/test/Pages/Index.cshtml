@@ -2,12 +2,15 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
-    //string db = Database.DBoutput();
+    List<string> schoolList = Database.DBoutput();
 }
 
 <body class="text-center">
     <h1 class="display-4">Study Abroad Questionnaire</h1>
-    @*<p> @db </p>*@
+    @foreach(string school in schoolList)
+    {
+        <p>@school</p>
+    }
 
 
     <div class="row row-cols-1 row-cols-md-1 g-4">

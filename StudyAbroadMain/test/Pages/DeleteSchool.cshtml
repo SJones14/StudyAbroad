@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    List<string> schoolList = Database.DBoutput();
+}
+
+<div class="text-center">
+    <h1 class="display-4" id="test">Delete a Program</h1>
+    @foreach (string school in schoolList)
+    {
+        <input type="checkbox" id="@school">
+        <label for="@school">@school</label><br />
+    }
+    <input type="button" onclick="" value="Delete">
+
+    <script type="text/javascript">
+        List < string > copy = @schoolList;
+        
+        function deleteItem(){
+            var i = 0;
+
+            do {
+                if (document.getElementById(copy[i]).checked)) {
+                    document.getElementById("test").innerHTML = "works";
+                }
+                i++;
+            }while (i < copy.)
+
+        }
+    </script>
+</div>
