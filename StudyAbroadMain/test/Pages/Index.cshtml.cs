@@ -31,13 +31,13 @@ namespace test.Pages
             dbconnection.Open();
             SqlCommand command;
             SqlDataReader reader;
-            string sql = "Select * From PROGRAMS";
+            string sql = "Select DISTINCT Major From PROGRAMS";
             command = new SqlCommand(sql, dbconnection);
             reader = command.ExecuteReader();
             List<string> Output = new();
             while (reader.Read())
             {
-                Output.Add(reader.GetValue(1).ToString());
+                Output.Add(reader.GetValue(0).ToString());
             }
             dbconnection.Close();
             return Output;
@@ -48,13 +48,13 @@ namespace test.Pages
             dbconnection.Open();
             SqlCommand command;
             SqlDataReader reader;
-            string sql = "Select * From UNIVERSITIES";
+            string sql = "Select DISTINCT Continent From UNIVERSITIES";
             command = new SqlCommand(sql, dbconnection);
             reader = command.ExecuteReader();
             List<string> Output = new();
             while (reader.Read())
             {
-                Output.Add(reader.GetValue(3).ToString());
+                Output.Add(reader.GetValue(0).ToString());
             }
             dbconnection.Close();
             return Output;
@@ -65,13 +65,13 @@ namespace test.Pages
             dbconnection.Open();
             SqlCommand command;
             SqlDataReader reader;
-            string sql = "Select * From UNIVERSITIES";
+            string sql = "Select DISTINCT Country From UNIVERSITIES";
             command = new SqlCommand(sql, dbconnection);
             reader = command.ExecuteReader();
             List<string> Output = new();
             while (reader.Read())
             {
-                Output.Add(reader.GetValue(2).ToString());
+                Output.Add(reader.GetValue(0).ToString());
             }
             dbconnection.Close();
             return Output;
