@@ -90,9 +90,9 @@ namespace test.Pages
         public void OnGet()
         {
         }
-        public RedirectToPageResult OnPost(string[] Major, string[] ctry, string[] cont)
+        public RedirectToPageResult OnPost(string Major, string ctry, string cont)
         {
-
+            filterResults.result(Major, ctry, cont);
 
             return RedirectToPage("/results");
         }
@@ -108,4 +108,4 @@ namespace test.Pages
     }
     }
 
-}
+

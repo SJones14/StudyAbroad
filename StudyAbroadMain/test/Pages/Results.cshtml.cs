@@ -13,7 +13,9 @@ namespace test.Pages
             dbconnection.Open();
             SqlCommand command;
             SqlDataReader reader;
-            string sql = "Select University_Name, Country, Continent, Major From UNIVERSITIES, UNIVERSITY_PROGRAMS, PROGRAMS WHERE UNIVERSITIES.University_ID = UNIVERSITY_PROGRAMS.University_ID AND UNIVERSITY_PROGRAMS.Program_ID = PROGRAMS.Program_ID";
+            string sql = "Select University_Name, Country, Continent, Major From UNIVERSITIES, UNIVERSITY_PROGRAMS, PROGRAMS " +
+                "WHERE UNIVERSITIES.University_ID = UNIVERSITY_PROGRAMS.University_ID AND UNIVERSITY_PROGRAMS.Program_ID = PROGRAMS.Program_ID" +
+                ";";
             command = new SqlCommand(sql, dbconnection);
             reader = command.ExecuteReader();
             List<string> Output = new();
@@ -50,11 +52,10 @@ namespace test.Pages
     public class Filters
     {
         
-
         public static void setFilters(string m = "", string con = "", string cr = "")
         {
-            string Major = m;
-            string Continent = con;
+            string major = m;
+            string continent = con;
             string Countries = cr;
         }
         
