@@ -90,6 +90,18 @@ namespace test.Pages
         public void OnGet()
         {
         }
+        public RedirectToPageResult OnPost(string[] Major, string[] ctry, string[] cont)
+        {
+
+
+            return RedirectToPage("/results");
+        }
 
     }
+
+    public class filterResults
+    {
+
+    }
+
 }

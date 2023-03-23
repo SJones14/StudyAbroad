@@ -9,115 +9,55 @@
 
 <body class="text-center">
     <h1 class="display-4">Study Abroad Questionnaire</h1>
-    @*<div class="dropdown">
-        <span>Select Continent:</span>
-        <div class="dropdown-content">
-            @foreach (string school in ContinentList)
-    {
-        
-        <input type="checkbox" id="@school">
-        <label for="@school">@school</label>
-        
-    }
-        </div>
-    </div>*@
+    <form method="post">
+        <div class="row row-cols-1 row-cols-md-1 g-4">
+            <div class="col">
+                <div class="card mx-auto" style="width: 30rem;">
+                    <div class="card-body text-start">
+                        <h6>Select major:</h6>
 
 
-    <div class="row row-cols-1 row-cols-md-1 g-4">
-        <!--<div class="col">
-            <div class="card mx-auto" style="width: 30rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Select continent(s):</h5>
-                    <div class="btn-group-vertical mx-auto mb-3" role="group" aria-label="continent button group">
-                        <input type="checkbox" class="btn-check" id="btncheckAfrica" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheckAfrica">Africa</label>
+                        @foreach (string school in MajorList)
+                        {
 
-                        <input type="checkbox" class="btn-check" id="btncheckAsia" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheckAsia">Asia</label>
-
-                        <input type="checkbox" class="btn-check" id="btncheckAustralia" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheckAustralia">Australia</label>
-
-                        <input type="checkbox" class="btn-check" id="btncheckEurope" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheckEurope">Europe</label>
-
-                        <input type="checkbox" class="btn-check" id="btncheckCentral" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheckCentral">Central/South America/Caribbean</label>
+                            <input type="checkbox" id="@school">
+                            <label for="@school">@school</label>
+                            <br />
+                        }
                     </div>
                 </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto" style="width: 30rem;">
+                    <div class="card-body text-start">
+                        <h6>Select Continent:</h6>
+                        @foreach (string school in ContinentList)
+                        {
 
-        </div>
-    </div>-->
-        <div class="col">
-            <div class="card mx-auto" style="width: 30rem;">
-                <div class="card-body text-start">
-                    <span>Select major:</span><br />
+                            <input type="checkbox" id="@school">
+                            <label for="@school">@school</label>
+                            <br />
+                        }
 
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto" style="width: 30rem;">
+                    <div class="card-body text-start">
+                        <h6>Select Country:</h6>
+                        @foreach (string school in CountryList)
+                        {
 
-                    @foreach (string school in MajorList)
-                    {
-
-                        <input type="checkbox" id="@school">
-                        <label for="@school">@school</label>
-                        <br />
-                    }
+                            <input type="checkbox" id="@school">
+                            <label for="@school">@school</label>
+                            <br />
+                        }
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card mx-auto" style="width: 30rem;">
-                <div class="card-body text-start">
-                    
-                        <span>Select Continent:</span><br/>
-                        
-
-                    @foreach (string school in ContinentList)
-                            {
-                                
-                                <input type="checkbox" id="@school">
-                                <label for="@school">@school</label>
-                                <br />
-                            }
-                        
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto" style="width: 30rem;">
-                <div class="card-body text-start">
-                    <span>Select Country:</span><br />
-                    @foreach (string school in CountryList)
-                    {
-
-                        <input type="checkbox" id="@school">
-                        <label for="@school">@school</label>
-                        <br />
-                    }
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-
+        <input class="btn btn-primary mt-3" type="submit" value="See Results">
+    </form>
 </body>
-@*<style>
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
 
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 12px 16px;
-        z-index: 1;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-</style>*@
