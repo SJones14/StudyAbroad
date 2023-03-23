@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/StudyAbroadMain.csproj": {}
+    "/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/StudyAbroadMain.csproj": {}
   },
   "projects": {
-    "/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/StudyAbroadMain.csproj": {
+    "/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/StudyAbroadMain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/StudyAbroadMain.csproj",
+        "projectUniqueName": "/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/StudyAbroadMain.csproj",
         "projectName": "test",
-        "projectPath": "/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/StudyAbroadMain.csproj",
-        "packagesPath": "/Users/sebastian/.nuget/packages/",
-        "outputPath": "/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/obj/",
+        "projectPath": "/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/StudyAbroadMain.csproj",
+        "packagesPath": "/Users/petersong/.nuget/packages/",
+        "outputPath": "/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sebastian/.nuget/NuGet/NuGet.Config"
+          "/Users/petersong/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
