@@ -101,7 +101,11 @@ namespace test.Pages
 
     public class filterResults
     {
-
+        public static void result(string Major, string ctry, string cont)
+        {
+            Filters.setFilters(Major, ctry, cont);
+        }
+    }
     }
 
 }
