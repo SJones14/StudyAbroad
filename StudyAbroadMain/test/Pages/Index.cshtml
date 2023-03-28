@@ -1,0 +1,180 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    List<string> ContinentList = Database.DBoutputContinents();
+    List<string> CountryList = Database.DBoutputCountries();
+    List<string> MajorList = Database.DBoutputMajors();
+}
+<head>
+    <style>
+        .inputGroup {
+            background-color: white;
+            display: block;
+            border-radius: 4px;
+            margin: 10px 0;
+            position: relative;
+        }
+
+            .inputGroup label {
+                padding: 12px 30px;
+                width: 100%;
+                display: block;
+                text-align: left;
+                border-radius: 4px;
+                color:;
+                cursor: pointer;
+                position: relative;
+                z-index: 2;
+                transition: color 200ms ease-in;
+                overflow: hidden;
+            }
+
+                .inputGroup label:before {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    content: "";
+                    background-color: #EF8A33; /*orange*/
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%) scale3d(1, 1, 1);
+                    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+                    opacity: 0;
+                    z-index: -1;
+                }
+
+                .inputGroup label:after {
+                    width: 32px;
+                    height: 32px;
+                    content: "";
+                    border: 2px solid #D1D7DC;
+                    background-color: #fff;
+                    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+                    background-repeat: no-repeat;
+                    background-position: 2px 3px;
+                    border-radius: 50%;
+                    z-index: 2;
+                    position: absolute;
+                    right: 30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    transition: all 200ms ease-in;
+                }
+
+            .inputGroup input:checked ~ label {
+                color: #fff;
+            }
+
+                .inputGroup input:checked ~ label:before {
+                    transform: translate(-50%, -50%) scale3d(56, 56, 1);
+                    opacity: 1;
+                }
+
+                .inputGroup input:checked ~ label:after {
+                    background-color: #5DBF3C;
+                    border-color: #5DBF3C;
+                }
+
+            .inputGroup input {
+                width: 32px;
+                height: 32px;
+                order: 1;
+                z-index: 2;
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+                visibility: hidden;
+            }
+
+        .form {
+            padding: 0 16px;
+            max-width: 550px;
+            margin: 50px auto;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 36px;
+        }
+
+        body {
+            background-color: #E8D9C1;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        code {
+            background-color: #9AA3AC;
+            padding: 0 8px;
+        }
+
+        .card {
+            background-color: #DBDDDE
+        }
+    </style>
+</head>
+
+<body class="text-center">
+    <h1 class="display-4">Study Abroad Questionnaire</h1>
+    <form method="post">
+        <div class="row row-cols-1 row-cols-md-1 g-4">
+            <div class="col">
+                <div class="card mx-auto" style="width: 30rem;">
+                    <div class="card-body text-start">
+                        <h5>Select major:</h5>
+
+                        @foreach (string major in MajorList)
+                        {
+                            <div class="inputGroup">
+                                <input type="checkbox" value="@major" name="Major" id="@major">
+                                <label for="@major">@major</label>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto" style="width: 30rem;">
+                    <div class="card-body text-start">
+                        <h5>Select Continent:</h5>
+                        @foreach (string continent in ContinentList)
+                        {
+                            <div class="inputGroup">
+                                <input type="checkbox" value="@continent" name="cont" id="@continent">
+                                <label for="@continent">@continent</label>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto" style="width: 30rem;">
+                    <div class="card-body text-start">
+                        <h5>Select Country:</h5>
+                        @foreach (string country in CountryList)
+                        {
+                            <div class="inputGroup">
+                                <input type="checkbox" value="@country" name="ctry" id="@country">
+                                <label for="@country">@country</label>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input class="btn btn-primary mt-3" type="submit" value="See Results">
+    </form>
+</body>
+

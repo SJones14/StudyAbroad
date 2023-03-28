@@ -1,0 +1,14 @@
+﻿@page
+@model ViewModel
+@{
+    ViewData["Title"] = "Home page";
+    List<string> schoolList = Database.DBoutput();
+}
+
+<div class="text-center">
+    <h1 class="display-4">Current List of Programs</h1>
+    @foreach (string school in schoolList)
+    {
+        <p>@school</p>
+    }
+</div>
