@@ -8,7 +8,9 @@ namespace test.Pages
 {
     public class printresults
     {
-        public static List<string> DBoutputPrograms()
+
+
+        public static string DBoutputSQLCode()
         {
             string[] major = Filters.getMajor();
             string[] country = Filters.getCountries();
@@ -17,56 +19,130 @@ namespace test.Pages
             string countrySQLCode = "";
             string continentSQLCode = "";
 
-            if(major.Length > 0) { 
-            majorSQLCode = " AND (Major = \'" + major[0] + "\'";
-            for (int i = 1; i < major.Length; i++)
+            if (major.Length > 0)
             {
-                majorSQLCode += " OR Major = \'" + major[i] + "\'";
-            }
+                majorSQLCode = " AND (Major = \'" + major[0] + "\'";
+                for (int i = 1; i < major.Length; i++)
+                {
+                    majorSQLCode += " OR Major = \'" + major[i] + "\'";
+                }
                 majorSQLCode += ") ";
             }
 
-            if(country.Length > 0) { 
-            countrySQLCode = " AND (Country = \'" + country[0] + "\'";
-            for (int i = 1; i < country.Length; i++)
+            if (country.Length > 0)
             {
-                countrySQLCode += " OR Country = \'" + country[i] + "\'";
-            }
+                countrySQLCode = " AND (Country = \'" + country[0] + "\'";
+                for (int i = 1; i < country.Length; i++)
+                {
+                    countrySQLCode += " OR Country = \'" + country[i] + "\'";
+                }
                 countrySQLCode += ") ";
             }
 
             if (Continent.Length > 0)
             {
-            continentSQLCode = " AND (Continent = \'" + Continent[0] + "\'";
-            for (int i = 1; i < Continent.Length; i++)
-            {
-                continentSQLCode += " OR Continent = \'" + Continent[i] + "\'";
-            }
+                continentSQLCode = " AND (Continent = \'" + Continent[0] + "\'";
+                for (int i = 1; i < Continent.Length; i++)
+                {
+                    continentSQLCode += " OR Continent = \'" + Continent[i] + "\'";
+                }
                 continentSQLCode += ") ";
             }
+
+            string sql = "SELECT University_Name, Country, Continent, Major FROM UNIVERSITIES, UNIVERSITY_PROGRAMS, PROGRAMS " +
+                "WHERE UNIVERSITIES.University_ID = UNIVERSITY_PROGRAMS.University_ID AND UNIVERSITY_PROGRAMS.Program_ID = PROGRAMS.Program_ID " +
+                majorSQLCode +
+                countrySQLCode +
+                continentSQLCode + " ;";
+
+            return sql;
+        }
+        public static List<string> DBoutputProgramUniversityName()
+        {
+
             SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver.database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Persist Security Info=False;User ID=tech;Password=StudyAbroad23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             dbconnection.Open();
             SqlCommand command;
             SqlDataReader reader;
 
-            string sql = "SELECT University_Name, Country, Continent, Major FROM UNIVERSITIES, UNIVERSITY_PROGRAMS, PROGRAMS " +
-                "WHERE UNIVERSITIES.University_ID = UNIVERSITY_PROGRAMS.University_ID AND UNIVERSITY_PROGRAMS.Program_ID = PROGRAMS.Program_ID " +
-                majorSQLCode + 
-                countrySQLCode + 
-                continentSQLCode + " ;";
+            string sql = DBoutputSQLCode();
+            command = new SqlCommand(sql, dbconnection);
+            reader = command.ExecuteReader();
+            List<string> Output = new();
+
+            while (reader.Read())
+            {
+                Output.Add(reader.GetValue(0).ToString());
+
+            }
+            dbconnection.Close();
+
+            return Output;
+        }
+        public static List<string> DBoutputProgramCountry()
+        {
+
+            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver.database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Persist Security Info=False;User ID=tech;Password=StudyAbroad23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            dbconnection.Open();
+            SqlCommand command;
+            SqlDataReader reader;
+
+            string sql = DBoutputSQLCode();
             command = new SqlCommand(sql, dbconnection);
             reader = command.ExecuteReader();
             List<string> Output = new();
             while (reader.Read())
             {
-                Output.Add(reader.GetValue(0) + "," + reader.GetValue(1) + "," + reader.GetValue(2) + "," + reader.GetValue(3));
+                Output.Add(reader.GetValue(1).ToString());
             }
             dbconnection.Close();
-            
+
+            return Output;
+        }
+        public static List<string> DBoutputProgramContinent()
+        {
+
+            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver.database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Persist Security Info=False;User ID=tech;Password=StudyAbroad23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            dbconnection.Open();
+            SqlCommand command;
+            SqlDataReader reader;
+
+            string sql = DBoutputSQLCode();
+            command = new SqlCommand(sql, dbconnection);
+            reader = command.ExecuteReader();
+            List<string> Output = new();
+            while (reader.Read())
+            {
+                Output.Add(reader.GetValue(2).ToString());
+            }
+            dbconnection.Close();
+
+            return Output;
+        }
+
+        public static List<string> DBoutputProgramMajor()
+        {
+
+            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver.database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Persist Security Info=False;User ID=tech;Password=StudyAbroad23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            dbconnection.Open();
+            SqlCommand command;
+            SqlDataReader reader;
+
+            string sql = DBoutputSQLCode();
+
+            command = new SqlCommand(sql, dbconnection);
+            reader = command.ExecuteReader();
+            List<string> Output = new();
+            while (reader.Read())
+            {
+                Output.Add(reader.GetValue(3).ToString());
+            }
+            dbconnection.Close();
+
             return Output;
         }
     }
-    
+
 
     public class resultsModel : PageModel
     {
@@ -79,12 +155,12 @@ namespace test.Pages
 
         public void OnGet()
         {
-            
-            
+
+
         }
         public RedirectToPageResult OnPost(string uniName, string ctry, string cont)
         {
-            
+
             return RedirectToPage("/Index");
         }
     }
@@ -97,7 +173,7 @@ namespace test.Pages
         public static void setFilters(string[] m, string[] con, string[] cr)
         {
             Major = new string[m.Length];
-            for (int i = 0; i< m.Length; i++)
+            for (int i = 0; i < m.Length; i++)
             {
                 Major[i] = m[i];
             }
@@ -111,11 +187,11 @@ namespace test.Pages
             {
                 Countries[i] = cr[i];
             }
-            
+
         }
         public static string[] getMajor() { return Major; }
-        public static string[] getContinent() { return continent;}
-        public static string[] getCountries() {  return Countries;}
+        public static string[] getContinent() { return continent; }
+        public static string[] getCountries() { return Countries; }
     }
-    
+
 }
