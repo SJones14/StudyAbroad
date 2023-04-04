@@ -1,10 +1,15 @@
 ﻿<Properties StartupConfiguration="{C708B2DA-DA91-49E2-86D3-05276CC2F960}|test">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/Results.cshtml">
     <Files>
-      <File FileName="test/Pages/Index.cshtml" Line="23" Column="13" />
-      <File FileName="test/Pages/Index.cshtml.cs" Line="1" Column="1" />
+      <File FileName="test/Pages/Index.cshtml" />
+      <File FileName="test/Pages/Index.cshtml.cs" />
       <File FileName="test/Pages/Results.cshtml" Line="1" Column="1" />
-      <File FileName="test/Pages/Results.cshtml.cs" Line="1" Column="1" />
+      <File FileName="test/Pages/Results.cshtml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,9 +18,9 @@
             <Node name="StudyAbroadMain" expanded="True">
               <Node name="Pages" expanded="True">
                 <Node name="CSS files" expanded="True" />
-                <Node name="AddUniversity.cshtml" expanded="True" />
-                <Node name="Index.cshtml" expanded="True" />
-                <Node name="Results.cshtml" expanded="True" selected="True" />
+                <Node name="Shared">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -25,9 +30,4 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.StudyAbroadMain PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>

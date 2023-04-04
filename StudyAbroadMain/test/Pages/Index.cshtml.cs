@@ -20,7 +20,7 @@ namespace test.Pages
             List<string> Output = new();
             while (reader.Read())
             {
-                Output.Add(reader.GetValue(1) + "," + reader.GetValue(2) + "," + reader.GetValue(3));
+                Output.Add(reader.GetValue(1) + "~ " + reader.GetValue(2) + "~ " + reader.GetValue(3));
             }
             dbconnection.Close();
             return Output;

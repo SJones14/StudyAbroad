@@ -1,22 +1,51 @@
 ﻿@page
 @model AdminOptionsModel
 @{
-
+    ViewData["Title"] = "Home page";
+    List<string> UniversityNameList = table.DBoutputProgramUniversityName();
+    List<string> UniversityCountryList = table.DBoutputProgramCountry();
+    List<string> UniversityContinentList = table.DBoutputProgramContinent();
+    List<string> UniversityMajorList = table.DBoutputProgramMajor();
 }
 
+<body class="text-center">
+    <h1 class="display-4">Study Abroad Questionnaire</h1>
 
-<div class="d-flex p-2 m-3">
-    <input type="button" class="btn btn-primary btn-lg" onclick="window.location.href='/AddUniversity'" value="Add University">
-</div>
 
-<div class="d-flex p-2 m-3">
-    <input type="button" class="btn btn-primary btn-lg" onclick="window.location.href='/DeleteSchool'" value="Delete University">
-</div>
 
-<div class="d-flex p-2">
-    <input type="button" class="btn btn-primary btn-lg" onclick="window.location.href='/ViewPrograms'" value="See list of Universities">
-</div>
+    <div class="row row-cols-1 row-cols-md-1 g-4">
+        <table>
+            <tr>
+                <th>UniversityName</th>
+                <th>Country</th>
+                <th>Continent</th>
+                <th>Major</th>
+                <th>Actions</th>
+            </tr>
 
-<div class="d-flex p-2">
-    <input type="button" class="btn btn-primary btn-lg" onclick="window.location.href='/EditProgram'" value="Update University List">
-</div>
+            @for (int i = 0; i < UniversityContinentList.Count; i++)
+            {
+                <form method="post">
+                    <input type="hidden" name="school" value="@UniversityNameList[i]" />
+                    <input type="hidden" name="major" value="@UniversityMajorList[i]" />
+
+                <tr style="border-bottom: 1px solid #ddd;">
+                    <td>@UniversityNameList[i]</td>
+                    <td>@UniversityCountryList[i]</td>
+                    <td>@UniversityContinentList[i]</td>
+                    <td>@UniversityMajorList[i]</td>
+                    <td><input class="btn btn-primary mt-3" type="button" onclick="window.location.href='/EditProgram'" value="Edit"> <input class="btn btn-primary mt-3" type="submit" value="Delete"></td>
+
+                </tr>
+                </form>
+            }
+
+        </table>
+
+
+        <input class="btn btn-primary mt-3" type="button" onclick="window.location.href='/AddProgram'" value="New Program">
+    </div>
+
+
+
+</body>

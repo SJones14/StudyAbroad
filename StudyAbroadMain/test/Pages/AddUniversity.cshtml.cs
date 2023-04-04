@@ -23,7 +23,7 @@ namespace test.Pages
         {
             InsertStatus += "University was added";
             AddSchool.Add(uniName, ctry, cont);
-            return RedirectToPage("/Index");
+            return RedirectToPage("/AddProgram");
         }
     }
 
