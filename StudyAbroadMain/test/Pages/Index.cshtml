@@ -101,7 +101,11 @@
         }
 
         body {
-            background-color: #E8D9C1;
+            /*            background-image: url("../assets/globe.jpg");*/
+            background-image: url('https://images.pexels.com/photos/335393/pexels-photo-335393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /*            background-color: #E8D9C1;*/
         }
 
         *,
@@ -122,59 +126,72 @@
         .card {
             background-color: #DBDDDE
         }
+        #demobox {
+            background-color: #E8D9C1;
+         padding: 20px;
+ /*           border: 2px;
+            border-radius: 8px;
+            border-style: solid;
+            border-color: #A29787;
+            margin: 0 auto;
+            margin-top: 50px;*/
+            
+        }
     </style>
 </head>
 
 <body class="text-center">
-    <h1 class="display-4">Study Abroad Questionnaire</h1>
-    <form method="post">
-        <div class="row row-cols-1 row-cols-md-1 g-4">
-            <div class="col">
-                <div class="card mx-auto" style="width: 30rem;">
-                    <div class="card-body text-start">
-                        <h5>Select major:</h5>
+    <div id="demobox" class="card mx-auto" style="width: 33rem;">
+        <h1 class="display-4">Study Abroad Questionnaire</h1>
+        <form method="post">
+            <div class="row row-cols-1 row-cols-md-1 g-4">
+                <div class="col">
+                    <div class="card mx-auto" style="width: 20rem;">
+                        <div class="card-body text-start">
+                            <h5>Select major:</h5>
 
-                        @foreach (string major in MajorList)
-                        {
-                            <div class="inputGroup">
-                                <input type="checkbox" value="@major" name="Major" id="@major">
-                                <label for="@major">@major</label>
-                            </div>
-                        }
+                            @foreach (string major in MajorList)
+                            {
+                                <div class="inputGroup">
+                                    <input type="checkbox" value="@major" name="Major" id="@major">
+                                    <label for="@major">@major</label>
+                                </div>
+                            }
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card mx-auto" style="width: 30rem;">
-                    <div class="card-body text-start">
-                        <h5>Select Continent:</h5>
-                        @foreach (string continent in ContinentList)
-                        {
-                            <div class="inputGroup">
-                                <input type="checkbox" value="@continent" name="cont" id="@continent">
-                                <label for="@continent">@continent</label>
-                            </div>
-                        }
+                <div class="col">
+                    <div class="card mx-auto" style="width: 20rem;">
+                        <div class="card-body text-start">
+                            <h5>Select Continent:</h5>
+                            @foreach (string continent in ContinentList)
+                            {
+                                <div class="inputGroup">
+                                    <input type="checkbox" value="@continent" name="cont" id="@continent">
+                                    <label for="@continent">@continent</label>
+                                </div>
+                            }
 
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-auto" style="width: 20rem;">
+                        <div class="card-body text-start">
+                            <h5>Select Country:</h5>
+                            @foreach (string country in CountryList)
+                            {
+                                <div class="inputGroup">
+                                    <input type="checkbox" value="@country" name="ctry" id="@country">
+                                    <label for="@country">@country</label>
+                                </div>
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card mx-auto" style="width: 30rem;">
-                    <div class="card-body text-start">
-                        <h5>Select Country:</h5>
-                        @foreach (string country in CountryList)
-                        {
-                            <div class="inputGroup">
-                                <input type="checkbox" value="@country" name="ctry" id="@country">
-                                <label for="@country">@country</label>
-                            </div>
-                        }
-                    </div>
-                </div>
-            </div>
-        </div>
-        <input class="btn btn-primary mt-3" type="submit" value="See Results">
-    </form>
+            <input class="btn btn-primary mt-3" type="submit" value="See Results">
+        </form>
+    </div>
 </body>
 

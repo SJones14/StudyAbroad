@@ -1,26 +1,26 @@
 ﻿<Properties StartupConfiguration="{C708B2DA-DA91-49E2-86D3-05276CC2F960}|test">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/Results.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/Index.cshtml">
     <Files>
-      <File FileName="test/Pages/Index.cshtml" />
+      <File FileName="test/Pages/Index.cshtml" Line="107" Column="42" />
       <File FileName="test/Pages/Index.cshtml.cs" />
-      <File FileName="test/Pages/Results.cshtml" Line="1" Column="1" />
+      <File FileName="test/Pages/Results.cshtml" />
       <File FileName="test/Pages/Results.cshtml.cs" />
+      <File FileName="test/Pages/Login.cshtml" />
+      <File FileName="test/Pages/Shared/_Layout.cshtml.css" />
+      <File FileName="test/wwwroot/js/site.js" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="StudyAbroadMain" expanded="True">
             <Node name="StudyAbroadMain" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="CSS files" expanded="True" />
-                <Node name="Shared">
-                  <Node name="_Layout.cshtml" selected="True" />
-                </Node>
+              <Node name="assets" expanded="True">
+                <Node name="globe.jpg" selected="True" />
+              </Node>
+              <Node name="Pages" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -28,6 +28,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.StudyAbroadMain PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
