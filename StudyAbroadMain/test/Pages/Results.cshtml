@@ -9,12 +9,14 @@
 }
 
 <head>
+
     <style>
         body {
             background-image: url('https://images.pexels.com/photos/335393/pexels-photo-335393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+
         #backBox {
             background-color: #E8D9C1;
             padding: 20px;
@@ -33,49 +35,33 @@
 
     <div id="backBox" class="card mx-auto" style="width: 40rem;">
         <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://web.archive.org/web/20161101185241if_/http://static.panoramio.com/photos/large/121046425.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row row-cols-1 row-cols-md-1 g-4">
             @for (int i = 0; i < UniversityContinentList.Count; i++)
             {
                 <div class="col">
-                    <div class="card mx-auto" style="width: 30rem;">
+                    <div class="card" style="width: 18rem;">
+                    <img src="https://web.archive.org/web/20161101185241if_/http://static.panoramio.com/photos/large/121046425.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@UniversityNameList[i]</h5>
+                            <p>@UniversityNameList[i]</p>
+                            <p>@UniversityCountryList[i]</p>
+                            <p>@UniversityContinentList[i]</p>
+                            <p>@UniversityMajorList[i]</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            @for (int i = 0; i < UniversityContinentList.Count; i++)
+            {
+                <div class="col">
+                    <div class="card mx-auto" style="width: 18rem;">
                         <div class="card-body">
 
                             <p>@UniversityNameList[i]</p>
