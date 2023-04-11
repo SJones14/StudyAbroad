@@ -108,6 +108,11 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+
+        #backBox {
+            background-color: #E8D9C1;
+            padding: 20px;
+        }
     </style>
 
 
@@ -118,29 +123,31 @@
 
     <main class="form-signin w-100 m-auto">
         <!--<img class="mb-4" src="../assets/brand/uf-logo.png" alt="" width="" height="">-->
-        <div class="center" class="mb-4 mx-auto" style="width:300px;">
+        @*<div class="center" class="mb-4 mx-auto" style="width:300px;">
             <img src="https://www.findlay.edu/offices/marketing-communication/brand-guidelines/SiteAssets/Pages/Wordmark/Stacked%20Academic%20Signature.png" alt="" width=300 height=auto>
-        </div>
+        </div>*@
         @if (!string.IsNullOrEmpty(Model.Failed))
         {
             <p style="color: red">@Model.Failed</p>
         }
-        <h1 class="h4 mt-5 mb-3 fw-normal">Please sign in</h1>
+        <div id="backBox" class="card mx-auto">
 
-        <form method="post">
-            <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" name="uname" placeholder="Username">
-                <label for="floatingInput">Username</label>
-            </div>
+            <h1 class="h4 mt-2 mb-3 fw-normal">Admin Log In</h1>
 
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" name="pswd" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
+            <form method="post">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" name="uname" placeholder="Username">
+                    <label for="floatingInput">Username</label>
+                </div>
 
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-        </form>
-        
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" name="pswd" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+            </form>
+        </div>
     </main>
 
 

@@ -10,7 +10,11 @@ namespace test.Pages
     {
         public static List<string> DBoutput()
         {
-            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver.database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Persist Security Info=False;User ID=tech;Password=StudyAbroad23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver." +
+                "database.windows.net,1433;Initial Catalog=ufstudyabroadDB;" +
+                "Persist Security Info=False;User ID=tech;Password=StudyAbroad23" +
+                ";MultipleActiveResultSets=False;Encrypt=True;TrustServerCertifi" +
+                "cate=False;Connection Timeout=30;");
             dbconnection.Open();
             SqlCommand command;
             SqlDataReader reader;
@@ -27,11 +31,18 @@ namespace test.Pages
         }
         public static List<string> DBoutputMajors()
         {
-            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver.database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Persist Security Info=False;User ID=tech;Password=StudyAbroad23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver." +
+                "database.windows.net,1433;Initial Catalog=ufstudyabroadDB;" +
+                "Persist Security Info=False;User ID=tech;Password=StudyAbroad" +
+                "23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCerti" +
+                "ficate=False;Connection Timeout=30;");
             dbconnection.Open();
             SqlCommand command;
             SqlDataReader reader;
-            string sql = "Select DISTINCT Major From PROGRAMS";
+            string sql = "SELECT DISTINCT Major FROM UNIVERSITIES, UNIVERSITY" +
+                "_PROGRAMS, PROGRAMS WHERE UNIVERSITIES.University_ID = UNIVE" +
+                "RSITY_PROGRAMS.University_ID AND UNIVERSITY_PROGRAMS.Program" +
+                "_ID = PROGRAMS.Program_ID;";
             command = new SqlCommand(sql, dbconnection);
             reader = command.ExecuteReader();
             List<string> Output = new();
@@ -44,11 +55,18 @@ namespace test.Pages
         }
         public static List<string> DBoutputContinents()
         {
-            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver.database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Persist Security Info=False;User ID=tech;Password=StudyAbroad23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver." +
+                "database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Pe" +
+                "rsist Security Info=False;User ID=tech;Password=StudyAbroad2" +
+                "3;MultipleActiveResultSets=False;Encrypt=True;TrustServerCer" +
+                "tificate=False;Connection Timeout=30;");
             dbconnection.Open();
             SqlCommand command;
             SqlDataReader reader;
-            string sql = "Select DISTINCT Continent From UNIVERSITIES";
+            string sql = "SELECT DISTINCT Continent FROM UNIVERSITIES, UNIVER" +
+                "SITY_PROGRAMS, PROGRAMS WHERE UNIVERSITIES.University_ID = U" +
+                "NIVERSITY_PROGRAMS.University_ID AND UNIVERSITY_PROGRAMS.Pro" +
+                "gram_ID = PROGRAMS.Program_ID;";
             command = new SqlCommand(sql, dbconnection);
             reader = command.ExecuteReader();
             List<string> Output = new();
@@ -61,11 +79,18 @@ namespace test.Pages
         }
         public static List<string> DBoutputCountries()
         {
-            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver.database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Persist Security Info=False;User ID=tech;Password=StudyAbroad23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver." +
+                "database.windows.net,1433;Initial Catalog=ufstudyabroadDB;Pe" +
+                "rsist Security Info=False;User ID=tech;Password=StudyAbroad2" +
+                "3;MultipleActiveResultSets=False;Encrypt=True;TrustServerCer" +
+                "tificate=False;Connection Timeout=30;");
             dbconnection.Open();
             SqlCommand command;
             SqlDataReader reader;
-            string sql = "Select DISTINCT Country From UNIVERSITIES";
+            string sql = "SELECT DISTINCT Country FROM UNIVERSITIES, UNIVERSI" +
+                "TY_PROGRAMS, PROGRAMS WHERE UNIVERSITIES.University_ID = UNI" +
+                "VERSITY_PROGRAMS.University_ID AND UNIVERSITY_PROGRAMS.Progr" +
+                "am_ID = PROGRAMS.Program_ID;";
             command = new SqlCommand(sql, dbconnection);
             reader = command.ExecuteReader();
             List<string> Output = new();

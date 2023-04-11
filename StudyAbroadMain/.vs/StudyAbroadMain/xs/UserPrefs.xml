@@ -1,24 +1,34 @@
 ﻿<Properties StartupConfiguration="{C708B2DA-DA91-49E2-86D3-05276CC2F960}|test">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/AddProgram.cshtml.cs">
     <Files>
-      <File FileName="test/Pages/Index.cshtml" Line="107" Column="42" />
-      <File FileName="test/Pages/Index.cshtml.cs" />
-      <File FileName="test/Pages/Results.cshtml" />
-      <File FileName="test/Pages/Results.cshtml.cs" />
-      <File FileName="test/Pages/Login.cshtml" />
+      <File FileName="test/Pages/Index.cshtml" Line="144" Column="60" />
+      <File FileName="test/Pages/Results.cshtml" Line="12" Column="1" />
+      <File FileName="test/Pages/Results.cshtml.cs" Line="1" Column="1" />
+      <File FileName="test/Pages/Login.cshtml" Line="110" Column="10" />
       <File FileName="test/Pages/Shared/_Layout.cshtml.css" />
       <File FileName="test/wwwroot/js/site.js" />
+      <File FileName="test/Pages/CSS files/signin.css" Line="1" Column="1" />
+      <File FileName="test/Pages/CSS files/Index.css" Line="1" Column="1" />
+      <File FileName="test/Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="test/Pages/Shared/_Layout.cshtml" Line="16" Column="78" />
+      <File FileName="test/Pages/AddProgram.cshtml.cs" Line="28" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="StudyAbroadMain" expanded="True">
             <Node name="StudyAbroadMain" expanded="True">
-              <Node name="assets" expanded="True">
-                <Node name="globe.jpg" selected="True" />
+              <Node name="assets" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="CSS files" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="AddProgram.cshtml" expanded="True">
+                  <Node name="AddProgram.cshtml.cs" selected="True" />
+                </Node>
+                <Node name="Index.cshtml" expanded="True" />
+                <Node name="Results.cshtml" expanded="True" />
               </Node>
-              <Node name="Pages" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="js" expanded="True" />
               </Node>

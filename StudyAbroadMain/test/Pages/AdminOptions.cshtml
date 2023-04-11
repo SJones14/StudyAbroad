@@ -7,45 +7,56 @@
     List<string> UniversityContinentList = table.DBoutputProgramContinent();
     List<string> UniversityMajorList = table.DBoutputProgramMajor();
 }
-
+<head>
+    <style>
+        body {
+            background-image: url('https://images.pexels.com/photos/335393/pexels-photo-335393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #backBox {
+            background-color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
 <body class="text-center">
-    <h1 class="display-4">Study Abroad Questionnaire</h1>
+    <div id="backBox" class="card mx-auto">
 
-
-
-    <div class="row row-cols-1 row-cols-md-1 g-4">
-        <table>
-            <tr>
-                <th>UniversityName</th>
-                <th>Country</th>
-                <th>Continent</th>
-                <th>Major</th>
-                <th>Actions</th>
-            </tr>
-
-            @for (int i = 0; i < UniversityContinentList.Count; i++)
-            {
-                <form method="post">
-                    <input type="hidden" name="school" value="@UniversityNameList[i]" />
-                    <input type="hidden" name="major" value="@UniversityMajorList[i]" />
-
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <td>@UniversityNameList[i]</td>
-                    <td>@UniversityCountryList[i]</td>
-                    <td>@UniversityContinentList[i]</td>
-                    <td>@UniversityMajorList[i]</td>
-                    <td><input class="btn btn-primary mt-3" type="button" onclick="window.location.href='/EditProgram'" value="Edit"> <input class="btn btn-primary mt-3" type="submit" value="Delete"></td>
-
+        <h1 class="display-4">Study Abroad Questionnaire</h1>
+        <div class="row row-cols-1 row-cols-md-1 g-4">
+            <table>
+                <tr>
+                    <th>UniversityName</th>
+                    <th>Country</th>
+                    <th>Continent</th>
+                    <th>Major</th>
+                    <th>Actions</th>
                 </tr>
-                </form>
-            }
 
-        </table>
+                @for (int i = 0; i < UniversityContinentList.Count; i++)
+                {
+                    <form method="post">
+                        <input type="hidden" name="school" value="@UniversityNameList[i]" />
+                        <input type="hidden" name="major" value="@UniversityMajorList[i]" />
+
+                    <tr style="border-bottom: 1px solid #ddd;">
+                        <td>@UniversityNameList[i]</td>
+                        <td>@UniversityCountryList[i]</td>
+                        <td>@UniversityContinentList[i]</td>
+                        <td>@UniversityMajorList[i]</td>
+                        <td><input class="btn btn-primary mt-3" type="button" onclick="window.location.href='/EditProgram'" value="Edit"> <input class="btn btn-primary mt-3" type="submit" value="Delete"></td>
+
+                    </tr>
+                    </form>
+                }
+
+            </table>
 
 
-        <input class="btn btn-primary mt-3" type="button" onclick="window.location.href='/AddProgram'" value="New Program">
+            <input class="btn btn-primary mt-3" type="button" onclick="window.location.href='/AddProgram'" value="New Program">
+        </div>
+
     </div>
-
-
 
 </body>
