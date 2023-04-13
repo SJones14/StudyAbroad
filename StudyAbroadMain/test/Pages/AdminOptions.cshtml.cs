@@ -26,9 +26,17 @@ namespace test.Pages
             EditPrograms.DeleteProgram(school, major);
             return RedirectToPage("/AdminOptions");
         }
-        public void OnPostEdit()
+        public RedirectToPageResult OnPostEdit(string school, string major)
         {
-            Console.WriteLine("it works");
+            for (int i = 0; i < school.Length; i++)
+            {
+                if (school[i] == '~')
+                {
+                    school = school.Substring(0, i);
+                }
+            }
+            changeProgram.setOriginalProgram(school, major);
+            return RedirectToPage("/EditProgram");
         }
     }
 

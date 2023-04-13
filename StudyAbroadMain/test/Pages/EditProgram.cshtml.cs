@@ -24,7 +24,7 @@ namespace test.Pages
 
         public RedirectToPageResult OnPost(string school, string major)
         {
-            Result += "Program was added!";
+            Result += "Program has changed!";
             for (int i = 0; i < school.Length; i++)
             {
                 if (school[i] == '~')
@@ -36,6 +36,24 @@ namespace test.Pages
             return RedirectToPage("/AdminOptions");
         }
 
+    }
+    public class changeProgram
+    {
+        static string originalSchool;
+        static string originalMajor;
+        public static void setOriginalProgram(string school, string major)
+        {
+            originalSchool = school;
+            originalMajor = major;
+        }
+        public static string getOriginalSchool()
+        {
+            return originalSchool;
+        }
+        public static string getOriginalMajor()
+        {
+            return originalMajor;
+        }
     }
 
 }
