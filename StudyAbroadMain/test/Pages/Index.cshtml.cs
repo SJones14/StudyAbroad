@@ -29,7 +29,29 @@ namespace test.Pages
             dbconnection.Close();
             return Output;
         }
-        public static List<string> DBoutputMajors()
+        public static List<string> DBAllMajors()
+        {
+            SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver." +
+                "database.windows.net,1433;Initial Catalog=ufstudyabroadDB;" +
+                "Persist Security Info=False;User ID=tech;Password=StudyAbroad" +
+                "23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCerti" +
+                "ficate=False;Connection Timeout=30;");
+            dbconnection.Open();
+            SqlCommand command;
+            SqlDataReader reader;
+            string sql = "SELECT Major from PROGRAMS;";
+            command = new SqlCommand(sql, dbconnection);
+            reader = command.ExecuteReader();
+            List<string> Output = new();
+            while (reader.Read())
+            {
+                Output.Add(reader.GetValue(0).ToString());
+            }
+            dbconnection.Close();
+            return Output;
+
+        }
+        public static List<string> DBProgramMajors()
         {
             SqlConnection dbconnection = new("Server=tcp:ufstudyabroadserver." +
                 "database.windows.net,1433;Initial Catalog=ufstudyabroadDB;" +

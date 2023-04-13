@@ -25,7 +25,7 @@ namespace test.Pages
         public RedirectToPageResult OnPost(string school, string major)
         {
             Result += "Program was added!";
-            for (int i = 0; i < school.Length; i++)
+                for (int i = 0; i < school.Length; i++)
             {
                 if (school[i] == '~')
                 {

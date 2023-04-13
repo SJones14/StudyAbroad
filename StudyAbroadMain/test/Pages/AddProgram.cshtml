@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Home page";
     List<string> schoolList = Database.DBoutput();
-    List<string> MajorList = Database.DBoutputMajors();
+    List<string> MajorList = Database.DBAllMajors();
 }
 
 <div class="text-center">
@@ -32,7 +32,7 @@
             <label for="floatingSelect">Choose Major</label>
         </div>
         <input type="button" onclick="window.location.href='/AddUniversity'" value="Add University">
-        <input type="button" onclick="window.location.href=''" value="Add Major">
-        <button type="submit">Submit</button>
+        <input type="button" onclick="window.location.href='/AddMajor'" value="Add Major">
+        <input type="submit" value="Submit">
     </form>
 </div>

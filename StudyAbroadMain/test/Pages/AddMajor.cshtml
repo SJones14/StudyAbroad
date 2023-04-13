@@ -1,0 +1,25 @@
+﻿@page
+@model AddMajorModel
+@{
+    ViewData["Title"] = "Add University";
+}
+<h1 class="display-4">@ViewData["Title"]</h1>
+
+
+
+<body class="text-center">
+    <p>Let's add a major.</p>
+    @if (!string.IsNullOrEmpty(Model.Failed))
+    {
+        <p style="color: red">@Model.Failed</p>
+    }
+
+    <form method="post">
+        <div class="form-floating mx-auto mb-3 col-md-6">
+            <input type="text" class="form-control" id="major" name="major" placeholder="Major Name">
+            <label for="universityName">Major Name</label>
+        </div>
+        <input class="btn btn-primary mt-3" type="submit" value="Add Major">
+    </form>
+
+</body>
