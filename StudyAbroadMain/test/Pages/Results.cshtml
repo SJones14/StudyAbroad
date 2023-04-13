@@ -20,12 +20,18 @@
         #backBox {
             background-color: #E8D9C1;
             padding: 20px;
+            width: 50rem;
+        }
+        @@media (max-width: 575.98px) {
+            #backBox {
+                width: 25rem;
+            }
         }
     </style>
 </head>
 
 <body class="text-center">
-    <div id="backBox" class="card mx-auto w-auto">
+    <div id="backBox" class="card mx-auto">
         <h1 class="display-4">Results</h1>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -33,7 +39,7 @@
             @for (int i = 0; i < UniversityContinentList.Count; i++)
             {
                 <div class="col">
-                    <div class="card mx-auto" style="width: 25rem;">
+                    <div class="card mx-auto" style="width: 22rem;">
                         <img src="https://web.archive.org/web/20161101185241if_/http://static.panoramio.com/photos/large/121046425.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">@UniversityNameList[i]</h5>

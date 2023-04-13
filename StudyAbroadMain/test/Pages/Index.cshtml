@@ -7,6 +7,8 @@
     List<string> MajorList = Database.DBoutputMajors();
 }
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         .inputGroup {
             background-color: white;
@@ -126,16 +128,23 @@
         .card {
             background-color: #DBDDDE
         }
-       
+
         #backBox {
             background-color: #E8D9C1;
             padding: 20px;
+            width: 30rem;
+        }
+
+        @@media (max-width: 575.98px) {
+            #backBox {
+                width:25rem;
+            }
         }
     </style>
 </head>
 
 <body class="text-center">
-    <div id="backBox" class="card mx-auto" style="width: 33rem;">
+    <div id="backBox" class="card mx-auto">
         <h1 class="display-4">Study Abroad Questionnaire</h1>
         <form method="post">
             <div class="row row-cols-1 row-cols-md-1 g-4">
