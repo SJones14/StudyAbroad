@@ -1,0 +1,37 @@
+﻿@page
+@model EditProgramModel
+@{
+    ViewData["Title"] = "Home page";
+    List<string> schoolList = Database.DBoutput();
+    List<string> MajorList = Database.DBoutputMajors();
+}
+
+<div class="text-center">
+    <h1 class="display-4">Update the program</h1>
+
+    <form method="post">
+        <div class="form-floating mx-auto mb-3 col-md-6">
+            <input type="hidden" id="1" name="1" /></input>
+            <select class="form-select" id="floatingSelect" name="school" aria-label="Floating label select example">
+                <option selected></option>
+                @foreach (string school in schoolList)
+                {
+                    <option value="@school">@school</option>
+                }
+            </select>
+            <label for="floatingSelect">Choose University</label>
+        </div>
+
+        <div class="form-floating mx-auto mb-3 col-md-6">
+            <select class="form-select" id="floatingSelect" name="major" aria-label="Floating label select example">
+                <option selected></option>
+                @foreach (string major in MajorList)
+                {
+                    <option value="@major">@major</option>
+                }
+            </select>
+            <label for="floatingSelect">Choose Major</label>
+        </div>
+        <button type="submit">Update</button>
+    </form>
+</div>

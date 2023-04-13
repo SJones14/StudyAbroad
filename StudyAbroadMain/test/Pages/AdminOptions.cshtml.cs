@@ -14,7 +14,7 @@ namespace test.Pages
         {
         }
 
-        public RedirectToPageResult OnPost(string school, string major)
+        public RedirectToPageResult OnPostDelete(string school, string major)
         {
             for (int i = 0; i < school.Length; i++)
             {
@@ -25,6 +25,10 @@ namespace test.Pages
             }
             EditPrograms.DeleteProgram(school, major);
             return RedirectToPage("/AdminOptions");
+        }
+        public void OnPostEdit()
+        {
+            Console.WriteLine("it works");
         }
     }
 

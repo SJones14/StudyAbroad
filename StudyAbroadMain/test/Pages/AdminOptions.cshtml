@@ -45,7 +45,9 @@
                         <td>@UniversityCountryList[i]</td>
                         <td>@UniversityContinentList[i]</td>
                         <td>@UniversityMajorList[i]</td>
-                        <td><input class="btn btn-primary mt-3" type="button" onclick="window.location.href='/EditProgram'" value="Edit"> <input class="btn btn-primary mt-3" type="submit" value="Delete"></td>
+                        <td><input class="btn btn-primary mt-3" type="submit" value="Edit" asp-page-handler="Edit">
+                            <input class="btn btn-primary mt-3" type="submit" value="Delete" asp-page-handler="Delete">
+                        </td>
 
                     </tr>
                     </form>
