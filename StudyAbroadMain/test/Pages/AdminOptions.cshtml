@@ -36,7 +36,7 @@
 
                 @for (int i = 0; i < UniversityContinentList.Count; i++)
                 {
-                    <form method="post">
+                    <form method="post" id="deleteForm_@i">
                         <input type="hidden" name="school" value="@UniversityNameList[i]" />
                         <input type="hidden" name="major" value="@UniversityMajorList[i]" />
 
@@ -45,8 +45,27 @@
                         <td>@UniversityCountryList[i]</td>
                         <td>@UniversityContinentList[i]</td>
                         <td>@UniversityMajorList[i]</td>
-                        <td><input class="btn btn-primary mt-3" type="submit" value="Edit" asp-page-handler="Edit">
-                            <input class="btn btn-primary mt-3" type="submit" value="Delete" asp-page-handler="Delete">
+                        <td>
+                            <input class="btn btn-primary mt-3" type="submit" value="Edit" asp-page-handler="Edit">
+                            @*<input class="btn btn-primary mt-3" type="submit" value="Delete" asp-page-handler="Delete">*@
+                        <button type="button" class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal_@i">
+                            Delete
+                        </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal_@i" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Are you sure you want to delete?</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary mt-3" data-bs-dismiss="modal">Close</button>
+                                            <input class="btn btn-danger mt-3" type="submit" value="Delete" asp-page-handler="Delete" form="deleteForm_@i">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </td>
 
                     </tr>

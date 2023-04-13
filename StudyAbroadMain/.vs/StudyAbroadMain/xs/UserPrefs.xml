@@ -1,18 +1,16 @@
 ﻿<Properties StartupConfiguration="{C708B2DA-DA91-49E2-86D3-05276CC2F960}|test">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/AddProgram.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/EditProgram.cshtml.cs">
     <Files>
-      <File FileName="test/Pages/Index.cshtml" Line="144" Column="60" />
-      <File FileName="test/Pages/Results.cshtml" Line="12" Column="1" />
-      <File FileName="test/Pages/Results.cshtml.cs" Line="1" Column="1" />
-      <File FileName="test/Pages/Login.cshtml" Line="110" Column="10" />
-      <File FileName="test/Pages/Shared/_Layout.cshtml.css" />
-      <File FileName="test/wwwroot/js/site.js" />
-      <File FileName="test/Pages/CSS files/signin.css" Line="1" Column="1" />
-      <File FileName="test/Pages/CSS files/Index.css" Line="1" Column="1" />
-      <File FileName="test/Pages/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="test/Pages/Shared/_Layout.cshtml" Line="16" Column="78" />
-      <File FileName="test/Pages/AddProgram.cshtml.cs" Line="28" Column="1" />
+      <File FileName="test/Pages/Index.cshtml" />
+      <File FileName="test/Pages/AddProgram.cshtml.cs" />
+      <File FileName="test/Pages/AddProgram.cshtml" />
+      <File FileName="test/Pages/Index.cshtml.cs" />
+      <File FileName="test/Pages/Login.cshtml" />
+      <File FileName="test/Pages/AdminOptions.cshtml.cs" />
+      <File FileName="test/Pages/Results.cshtml" />
+      <File FileName="test/Pages/Login.cshtml.cs" Line="1" Column="1" />
+      <File FileName="test/Pages/EditProgram.cshtml" Line="5" Column="48" />
+      <File FileName="test/Pages/EditProgram.cshtml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,11 +20,15 @@
               <Node name="assets" expanded="True" />
               <Node name="Pages" expanded="True">
                 <Node name="CSS files" expanded="True" />
-                <Node name="Shared" expanded="True" />
-                <Node name="AddProgram.cshtml" expanded="True">
-                  <Node name="AddProgram.cshtml.cs" selected="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
                 </Node>
+                <Node name="AddProgram.cshtml" expanded="True" />
+                <Node name="AddUniversity.cshtml" expanded="True" />
+                <Node name="AdminOptions.cshtml" expanded="True" />
+                <Node name="EditProgram.cshtml" expanded="True" />
                 <Node name="Index.cshtml" expanded="True" />
+                <Node name="Login.cshtml" expanded="True" />
                 <Node name="Results.cshtml" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
@@ -39,8 +41,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.StudyAbroadMain PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
