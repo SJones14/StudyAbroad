@@ -20,58 +20,62 @@
         }
     </style>
 </head>
-<body class="text-center">
+<body>
     <div id="backBox" class="card mx-auto">
 
         <h1 class="display-4">Study Abroad Questionnaire</h1>
         <div class="row row-cols-1 row-cols-md-1 g-4">
-            <table>
-                <tr>
-                    <th>UniversityName</th>
-                    <th>Country</th>
-                    <th>Continent</th>
-                    <th>Major</th>
-                    <th>Actions</th>
-                </tr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">University</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">Continent</th>
+                        <th scope="col">Major</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < UniversityContinentList.Count; i++)
+                    {
+                        <form method="post" id="deleteForm_@i">
+                            <input type="hidden" name="school" value="@UniversityNameList[i]" />
+                            <input type="hidden" name="major" value="@UniversityMajorList[i]" />
+                         
+                        <tr style="border-bottom: 1px solid #ddd;">
 
-                @for (int i = 0; i < UniversityContinentList.Count; i++)
-                {
-                    <form method="post" id="deleteForm_@i">
-                        <input type="hidden" name="school" value="@UniversityNameList[i]" />
-                        <input type="hidden" name="major" value="@UniversityMajorList[i]" />
-
-                    <tr style="border-bottom: 1px solid #ddd;">
-                        <td>@UniversityNameList[i]</td>
-                        <td>@UniversityCountryList[i]</td>
-                        <td>@UniversityContinentList[i]</td>
-                        <td>@UniversityMajorList[i]</td>
-                        <td>
-                            <input class="btn btn-primary mt-3" type="submit" value="Edit" asp-page-handler="Edit">
-                            @*<input class="btn btn-primary mt-3" type="submit" value="Delete" asp-page-handler="Delete">*@
-                        <button type="button" class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal_@i">
-                            Delete
-                        </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal_@i" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Are you sure you want to delete?</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <button type="button" class="btn btn-secondary mt-3" data-bs-dismiss="modal">Cancel</button>
-                                            <input class="btn btn-danger mt-3" type="submit" value="Delete" asp-page-handler="Delete" form="deleteForm_@i">
+                            <th scope="row">@i</th>
+                            <td>@UniversityNameList[i]</td>
+                            <td>@UniversityCountryList[i]</td>
+                            <td>@UniversityContinentList[i]</td>
+                            <td>@UniversityMajorList[i]</td>
+                            <td>
+                                <input class="btn btn-primary mt-3" type="submit" value="Edit" asp-page-handler="Edit">
+                                <button type="button" class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal_@i">
+                                    Delete
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal_@i" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Are you sure you want to delete?</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <button type="button" class="btn btn-secondary mt-3" data-bs-dismiss="modal">Cancel</button>
+                                                <input class="btn btn-danger mt-3" type="submit" value="Delete" asp-page-handler="Delete" form="deleteForm_@i">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
+                            </td>
 
-                    </tr>
-                    </form>
-                }
-
+                        </tr>
+                        </form>
+                    }
+                </tbody>
             </table>
 
 
