@@ -8,7 +8,10 @@
 
 <div class="text-center">
     <h1 class="display-4">Add New Program</h1>
-
+    @if (!string.IsNullOrEmpty(Model.Result))
+    {
+        <p style="color: red">@Model.Result</p>
+    }
     <form method="post">
         <div class="form-floating mx-auto mb-3 col-md-6">
             <select class="form-select" id="floatingSelect" name="school" aria-label="Floating label select example">
@@ -31,8 +34,8 @@
             </select>
             <label for="floatingSelect">Choose Major</label>
         </div>
-        <input type="button" onclick="window.location.href='/AddUniversity'" value="Add University">
-        <input type="button" onclick="window.location.href='/AddMajor'" value="Add Major">
-        <input type="submit" value="Submit">
+        <input type="button" class="btn btn-primary mt-3" onclick="window.location.href='/AddUniversity'" value="Add University">
+        <input type="button" class="btn btn-primary mt-3" onclick="window.location.href='/AddMajor'" value="Add Major">
+        <input type="submit" class="btn btn-primary mt-3" value="Submit">
     </form>
 </div>

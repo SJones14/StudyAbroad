@@ -1,50 +1,23 @@
 ﻿<Properties StartupConfiguration="{C708B2DA-DA91-49E2-86D3-05276CC2F960}|test">
-  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/EditProgram.cshtml.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/AddProgram.cshtml.cs">
     <Files>
-      <File FileName="test/Pages/Index.cshtml" />
-      <File FileName="test/Pages/AddProgram.cshtml.cs" />
-      <File FileName="test/Pages/AddProgram.cshtml" />
-      <File FileName="test/Pages/Index.cshtml.cs" />
-      <File FileName="test/Pages/Login.cshtml" />
-      <File FileName="test/Pages/AdminOptions.cshtml.cs" />
-      <File FileName="test/Pages/Results.cshtml" />
-      <File FileName="test/Pages/Login.cshtml.cs" Line="1" Column="1" />
-      <File FileName="test/Pages/EditProgram.cshtml" Line="5" Column="48" />
-      <File FileName="test/Pages/EditProgram.cshtml.cs" Line="1" Column="1" />
+      <File FileName="test/Pages/Shared/_Layout.cshtml" />
+      <File FileName="test/Pages/AddProgram.cshtml" Line="10" Column="47" />
+      <File FileName="test/Pages/AddProgram.cshtml.cs" Line="3" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="StudyAbroadMain" expanded="True">
-            <Node name="StudyAbroadMain" expanded="True">
-              <Node name="assets" expanded="True" />
-              <Node name="Pages" expanded="True">
-                <Node name="CSS files" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" expanded="True" />
-                </Node>
-                <Node name="AddProgram.cshtml" expanded="True" />
-                <Node name="AddUniversity.cshtml" expanded="True" />
-                <Node name="AdminOptions.cshtml" expanded="True" />
-                <Node name="EditProgram.cshtml" expanded="True" />
-                <Node name="Index.cshtml" expanded="True" />
-                <Node name="Login.cshtml" expanded="True" />
-                <Node name="Results.cshtml" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="js" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="StudyAbroadMain" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.StudyAbroadMain PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

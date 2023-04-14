@@ -17,9 +17,9 @@ namespace test.Pages
         {
         }
 
-        public string Failed { get; set; }
+        public string? Failed { get; set; }
 
-        public RedirectToPageResult OnPost(string major)
+        public RedirectToPageResult? OnPost(string major)
         {
             bool notUnique;
 

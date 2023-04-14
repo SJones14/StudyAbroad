@@ -10,6 +10,11 @@
 <body class="text-center">
     <p>Let's add a university.</p>
 
+    @if (!string.IsNullOrEmpty(Model.InsertStatus))
+    {
+        <p style="color: red">@Model.InsertStatus</p>
+    }
+
     <form method="post">
         <div class="form-floating mx-auto mb-3 col-md-6">
             <input type="text" class="form-control" id="universityName" name="uniName" placeholder="University Name">
@@ -48,7 +53,7 @@
         </select>
         <label for="floatingSelect">Duration of study abroad program continent</label>
     </div>
-    
+
 
     <div class="form-floating mx-auto mb-3 col-md-6">
         <input type="text" class="form-control" id="housingType" placeholder="dorm">

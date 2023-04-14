@@ -9,69 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StudyAbroadMain
 build_property.RootNamespace = StudyAbroadMain
-build_property.ProjectDir = /Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/
+build_property.ProjectDir = /Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test
+build_property.MSBuildProjectDirectory = /Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/AddMajor.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/AddMajor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkTWFqb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/AddProgram.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/AddProgram.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkUHJvZ3JhbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/AddUniversity.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/AddUniversity.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkVW5pdmVyc2l0eS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/AdminOptions.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/AdminOptions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW5PcHRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/DeleteSchool.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/DeleteSchool.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVsZXRlU2Nob29sLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/EditProgram.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/EditProgram.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdFByb2dyYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/Error.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/Index.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/Login.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/Results.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/Results.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzdWx0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/ViewPrograms.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/ViewPrograms.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmlld1Byb2dyYW1zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/_ViewImports.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/_ViewStart.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/petersong/Developer/StudyAbroad/StudyAbroadMain/test/Pages/Shared/_Layout.cshtml]
+[/Users/sebastian/Documents/GitHub/StudyAbroad/StudyAbroadMain/test/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ps8s6hlvt4

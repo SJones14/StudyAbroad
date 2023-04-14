@@ -17,9 +17,9 @@ namespace test.Pages
         {
         }
 
-        public string InsertStatus { get; set; }
+        public string? InsertStatus { get; set; }
 
-        public RedirectToPageResult OnPost(string uniName, string ctry, string cont)
+        public RedirectToPageResult? OnPost(string uniName, string ctry, string cont)
         {
             if (AddSchool.checkUnique(uniName, ctry))
             {
@@ -30,7 +30,7 @@ namespace test.Pages
             else
             {
                 InsertStatus += "This University already Exists";
-                return RedirectToPage("/AddProgram");
+                return null;
             }
             
             
